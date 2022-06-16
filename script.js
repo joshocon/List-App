@@ -23,4 +23,21 @@ function newList(){
 
 }
 
+function create_list(){
+    alert('creating_list');
+    document.getElementById('list_creator').style.visibility = 'hidden';
+    let newElement = document.createElement('h5');
+    let newListName = document.createTextNode(document.getElementById('list_name').value);
+    let newList = newElement.appendChild(newListName);
+    let aside = document.getElementById('aside');
+    aside.appendChild(newList);
+   
+
+}
+
+function cancel_list(){
+    alert('canceling_list');
+    document.getElementById('list_creator').style.visibility = 'hidden';
+    
+}
 

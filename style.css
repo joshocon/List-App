@@ -40,6 +40,8 @@ nav {
 
 aside {
     visibility: visible;
+    display: grid;
+    grid-template-rows: repeat(auto, 150px);
 }   
 
 #newListButton {
