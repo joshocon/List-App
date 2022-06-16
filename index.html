@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>List App</title>
+    <link href="style.css" rel="stylesheet">
+</head>
+<body>
+<nav>
+    <button id="nav_button" type="button" onclick="expand_Close()">---</button>
+    <h1 id="title"> Josh's List App</h1>
+</nav>
+<main>
+<aside id="aside">
+    <button id="newListButton" type="button" onclick="newList()">+ New List</button>
+</aside>
+
+<img id="missing_list" src="https://ssl.gstatic.com/assistant/shoppinglist/checklist.png">
+<p id="missing_list_text"> You have no lists currently...</p>
+
+<form id="list_creator">
+    <h4>New List</h4>
+    <div class="form_elements">
+    <input type="text" id="list_name">
+    <button id="create_button" type="button" onclick="create_list()">Create</button>
+    <button id="cancel_button" type="button" onclick="cancel_list()">Cancel</button>
+    </div>
+</form>
+</main>
+
+</body>
+<footer>
+    <script src="script.js"></script>
+</footer>
+
+</html>
